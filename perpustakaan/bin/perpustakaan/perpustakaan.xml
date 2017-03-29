@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perpustakaan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="perpustakaan.xsd">
+<buku>
+	<kodebuku>b01</kodebuku>
+	<namabuku>Habis malam terbitlah pagi</namabuku>
+	<harga>30000</harga>
+		<asalbuku>
+		<penerbit>pt.abc</penerbit>
+		<kodepenerbit>p01</kodepenerbit>
+		</asalbuku>
+		<tujuan>
+		<pt>union</pt>
+		<kodewil>1001</kodewil>
+		</tujuan>
+</buku>
+<buku>
+	<kodebuku>b02</kodebuku>
+	<namabuku>manusia setengah salmon</namabuku>
+	<harga>20000</harga>
+		<asalbuku>
+		<penerbit>pt.abc</penerbit>
+		<kodepenerbit>p01</kodepenerbit>
+		</asalbuku>
+		<tujuan>
+		<pt>union</pt>
+		<kodewil>1001</kodewil>
+		</tujuan>
+</buku>
+</perpustakaan>

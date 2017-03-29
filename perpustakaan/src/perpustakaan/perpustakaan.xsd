@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="perpustakaan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="buku"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="buku">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kodebuku" minOccurs="1"/>
+                <xs:element ref="namabuku"/>
+                <xs:element ref="harga"/>
+                <xs:element ref="asalbuku"/>
+                <xs:element ref="tujuan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="kodebuku" type="xs:NCName"/>
+    <xs:element name="namabuku" type="xs:string"/>
+    <xs:element name="harga" type="xs:integer"/>
+    <xs:element name="asalbuku">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="penerbit"/>
+                <xs:element ref="kodepenerbit"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="penerbit" type="xs:NCName"/>
+    <xs:element name="kodepenerbit" type="xs:NCName"/>
+    <xs:element name="tujuan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pt"/>
+                <xs:element ref="kodewil"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pt" type="xs:NCName"/>
+    <xs:element name="kodewil" type="xs:integer"/>
+</xs:schema>
